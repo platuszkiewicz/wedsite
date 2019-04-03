@@ -112,19 +112,19 @@ nav .brand-logo img {
 
 
 #home {
-  background: url("img/home-img1flat2.jpg") no-repeat center center;
+  background: url("img/home-img1flat3.jpg") no-repeat center center;
   /* background-position: 100% 100%; */
   background-size: cover;
   display: inline;
   float: left;
-  height: 520px;
+  height: 620px;
   position: relative;
   width: 100%;
 }
 
 
 #home .overlay-section {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
   height: 100%;
   width: 100%;
 }
