@@ -176,12 +176,12 @@ jQuery(function($){
     })
 	  
 	/* ----------------------------------------------------------- */
-	/* 9. CALL TO ABOUT
+	/* 9. CALL TO SLUB
 	/* ----------------------------------------------------------- */ 
 	
 	jQuery(".call-to-about").click(function() {
     jQuery('html,body').animate({
-        scrollTop: $("#about").offset().top},
+        scrollTop: $("#skill").offset().top},
         'slow');
 	});
 
@@ -211,6 +211,23 @@ jQuery(function($){
         scrollTop: $("#footer").offset().top},
         'slow');
 	});
+	
+		var setHeight = $("#img-kosciol").height();
+	$("#div-map-kosciol").height(setHeight);
+	window.onresize = function() {
+		var setHeight = $("#img-kosciol").height();
+		$("#div-map-kosciol").height(setHeight);
+	}
 
+		var setHeight = $("#img-kasyno").height();
+	$("#div-map-kasyno").height(setHeight);
+	window.onresize = function() {
+		var setHeight = $("#img-kasyno").height();
+		$("#div-map-kasyno").height(setHeight);
+	}
+	
+	jQuery(".btn-prezenty").click(function(){
+		alert("Feature not supported yet.")
+		});
 	
 });
