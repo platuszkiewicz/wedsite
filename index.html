@@ -5,12 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
       <title>Ola i Piotrek</title>
 
-       <!-- CSS  -->      
+      <!-- CSS  -->      
       <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <!-- Font Awesome -->
       <link href="css/font-awesome.css" rel="stylesheet">
       <!-- Default Theme CSS File-->
-      <link id="switcher" href="css/themes/default-theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>     
+      <link id="switcher" href="css/themes/default-theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <!-- Main css File -->
       <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
@@ -39,7 +39,7 @@
                 <!-- LOGO -->
 
                 <!-- TEXT BASED LOGO -->
-				<img height="44px" style="margin-top: 10px; margin-right: 10px" src="horseshoe/horseshoe_icon_white.png">
+				<img id="horseshoe" height="44px" style="margin-top: 10px; margin-right: 10px" src="horseshoe/horseshoe_icon_white.png">
                 <a href="index.html" class="brand-logo">Ola i Piotrek</a>
 
                 <ul class="right hide-on-med-and-down custom-nav menu-scroll">
@@ -47,6 +47,7 @@
                   <li><a href="#skill">Ślub</a></li>
                   <li><a href="#portfolio">Przyjęcie</a></li>
                   <li><a href="#blog">Podarunki</a></li>
+                  <li><a href="#blog">Kontakt</a></li>
                 </ul>
                 <!-- For Mobile View -->
                 <ul id="slide-out" class="side-nav menu-scroll">
@@ -54,6 +55,7 @@
                   <li><a href="#skill">Ślub</a></li>
                   <li><a href="#portfolio">Przyjęcie</a></li>
                   <li><a href="#blog">Podarunki</a></li>
+                  <li><a href="#blog">Kontak</a></li>
                 </ul>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
               </div>
@@ -75,51 +77,13 @@
                       <!-- <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Hire Me <i class="mdi-content-send left"></i>                      -->
                       <!-- </a> -->
                       <!-- Call to About Button -->
-                      <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">play_for_work</i></button>                  
+                      <button class="btn btn-floating waves-effect waves-light btn-large white call-to-about"><i class="material-icons">arrow_downward</i></button>                  
                     </div>
                   </div>  
                 </div>
               </div>
             </div>
           </section>
-
-          <!-- START ABOUT SECTION -->
-          <!-- <section id="about"> -->
-            <!-- <div class="container"> -->
-              <!-- <div class="row"> -->
-                <!-- <div class="col s12"> -->
-                  <!-- <div class="about-inner"> -->
-                    <!-- <div class="row"> -->
-                      <!-- <div class="col s12 m4 l3"> -->
-                        <!-- <div class="about-inner-left"> -->
-                          <!-- <img class="profile-img" src="img/profile-img1.jpg" alt="Profile Image"> -->
-                        <!-- </div> -->
-                      <!-- </div> -->
-                      <!-- <div class="col s12 m8 l9"> -->
-                        <!-- <div class="about-inner-right"> -->
-                          <!-- <h3>About Me</h3> -->
-                          <!-- <p>I'm a USA based UX/UI Designer creating awesome and effective visual identities for companies of all sizes around the globe.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here</p> -->
-                          <!-- <div class="personal-information col s12 m12 l6"> -->
-                            <!-- <h3>Personal Information</h3> -->
-                            <!-- <ul> -->
-                              <!-- <li><span>Name : </span>John Doe </li> -->
-                              <!-- <li><span>Age : </span>26 Years</li> -->
-                              <!-- <li><span>Phone : </span>+01254689</li> -->
-                              <!-- <li><span>Email : </span>John@gmail.com</li> -->
-                              <!-- <li><span>Address : </span>California,USA</li> -->
-                            <!-- </ul> -->
-                          <!-- </div> -->
-                          <!-- <div class="resume-download col s12 m12 l6"> -->
-                            <!-- <a href="#" class="waves-effect waves-light btn-large resume-btn"><i class="mdi-content-archive left"></i> Download Resume</a> -->
-                          <!-- </div> -->
-                        <!-- </div> -->
-                      <!-- </div> -->
-                    <!-- </div> -->
-                  <!-- </div> -->
-                <!-- </div> -->
-              <!-- </div> -->
-            <!-- </div> -->
-          <!-- </section> -->
 
           <!-- Start Resume -->
             <!-- Start Skill -->
@@ -130,7 +94,9 @@
                   <p>Nasz ślub odbędzie się w kościele św. Marcina przy ulicy Piwnej 9/11 w Warszawie. Zapraszamy o godzinie 14.00!</p>
 				  <div class="row">
                     <div class="col s12 m6 l6">
-                         <img width ="100%" id ="img-kosciol" src="img/Kosciol_marcina_warszawa_R2.jpg">
+					<a href="https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marcina_w_Warszawie">
+                         <img width ="100%" id ="img-kosciol" src="img/Kosciol_marcina_warszawa_R2.jpg" title="Drzeworyt: Michał Starkman (około 1855 r), scan i obróbka Lonio17 [Public domain], via Wikimedia Commons">
+						 </a>
 						 </div>
 					<div class="col s12 m6 l6">
 						 <div class="contact-map" id="div-map-kosciol">
@@ -147,10 +113,11 @@
               <div class="container">
 				<div class="footer-top-inner">
                   <h2 class="title">Przyjęcie</h2>
-                  <p>Wieczorem zapraszamy na przyjęcie w Pałacyku Kasyno w Podkowie Leśnej przy ulicy Lilpopa 18. Osoby niezmotoryzowane mogą przyjechać tutaj kolejką WKD z Dworca Centralnego. Pamiętajcie o skasowaniu bietu w pociągu!</p>
+                  <p>Wieczorem zapraszamy na przyjęcie w Pałacyku Kasyno w Podkowie Leśnej przy ulicy Lilpopa 18. Osoby niezmotoryzowane mogą przyjechać tutaj kolejką WKD z centrum Warszawy, co zajmie około 40 min. Wyruszyć można z przystanku Warszawa Śródmieście WKD (okolice Dworca Centralnego), a wysiąść na stacji Podkowa Leśna Główna. Pamiętajcie o skasowaniu biletu w pociągu!</p>
 				  <div class="row">
                     <div class="col s12 m6 l6">
-                         <img width ="100%" id ="img-kasyno" src="img/kasyno.jpg">
+					<a href="https://pl.wikipedia.org/wiki/Podkowa_Le%C5%9Bna">
+                         <img title="Jakub Skowron [CC BY-SA 3.0 pl (https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en)]" width ="100%" id ="img-kasyno" src="img/kasyno.jpg"> </a>
 						 </div>
 					<div class="col s12 m6 l6">
 						 <div class="contact-map" id="div-map-kasyno">
@@ -161,7 +128,7 @@
             </div>
             </div>
             </div>
-       
+       </section>
               
 
 
@@ -172,7 +139,7 @@
                <div class="col s12">
                  <div class="blog-inner">
                    <h2 class="title">PODARUNKI</h2>
-                   <p>Jeżeli chcielibyście nam coś sprezentować, przygotowaliśmy listę wymarzonych prezentów: <a href="#" onClick="alert('Feature not supported yet')" id="btn-prezenty"> klik</a> </p>
+                   <p>Jeżeli chcielibyście nam coś sprezentować, przygotowaliśmy listę wymarzonych prezentów (hasło: olapiotrek): <a target="_blank" rel="noopener noreferrer" href="http://www.lista-osobista.pl/lista/10513/wesele_oli_i_piotrka.html" id="btn-prezenty"> klik</a> </p>
 
                  
                  </div>
@@ -181,20 +148,33 @@
             </div>
           </section>
           <!-- Start Footer -->
+		  	<section id="kontakt">
           <footer id="footer" role="contentinfo">
             <!-- Start Footer Top -->
             <div class="footer-top">
               <div class="container">
-                <div class="row">
-                  <div class="col s12">
+			
+
+				                  <div class ="footer-top-inner">  <h2 class="title">Kontakt</h2>    </div>
+								  <div class="row">
+                  <div class="col s12 m6 16">
                     <div class="footer-top-inner">
-                      <h2 class="title">Kontakt</h2>
-                      <p> Ola: aleksandra.fabisiewicz@gmail.com</p>
-                      <p> Piotrek: piotr.latuszkiewicz@gmail.com</p>
+
+                      <p> Ola: aleksandra.fabisiewicz@gmail.com | 698 652 954</p>
+                      <p> Piotrek: piotr.latuszkiewicz@gmail.com | 511 549 082</p>
 
                     </div>
                   </div>
-                </div>
+				  
+				  <div class="col s12 m6 16">
+                    <div class="footer-top-inner">
+
+                      <p> Daria: dara.grabowska.1992@gmail.com | 509 754 227</p>
+                      <p> Paweł: latuszkiewicz.pawel@gmail.com | 503 843 114</p>
+
+                    </div>
+                  </div>
+</div>
               </div>
             </div>
             <!-- Start Footer Bottom -->
@@ -212,19 +192,17 @@
               </div>
             </div>
           </footer>
+		  </section>
         </main>
       </div>
       <!-- jQuery Library -->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <!-- Materialize js -->
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <!-- Skill Progress Bar -->
-      <script src="js/appear.min.js" type="text/javascript"></script>
-      <script src="js/pro-bars.min.js" type="text/javascript"></script>
-      <!-- Owl slider -->      
-      <script src="js/owl.carousel.min.js"></script>    
+
+
       <!-- Mixit slider  -->
-      <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+      <!-- <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script> -->
       <!-- counter -->
       <script src="js/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>     

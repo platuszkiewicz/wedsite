@@ -464,7 +464,7 @@ nav .brand-logo img {
 
 #portfolio{ 
   display: inline;
-  padding-bottom: 100px;
+  /* padding-bottom: 60px; */
   float: left;
   width: 100%;
 }
@@ -473,6 +473,7 @@ nav .brand-logo img {
 .portfolio-top{
   display: inline;  
   padding-top: 60px;
+  padding-bottom: 60px;
   float: left;
   width: 100%; 
 }
@@ -1864,7 +1865,8 @@ textarea.materialize-textarea {
 
 
 @media(max-width:991px ){
-
+#horseshoe{margin-top:10px!important; float:right}
+#home{height:350px}
   .home-inner {padding: 30px;}
   .home-title {font-size: 55px;}
   .call-to-about {bottom: -95px;}
@@ -1888,7 +1890,8 @@ textarea.materialize-textarea {
 
 
 @media(max-width:767px ){
-
+#horseshoe{margin-top:10px!important; float:right}
+#home{height:350px}
   nav .brand-logo img {height: 40px; margin-top: 12px;}
   .home-inner { padding: 10px;}
   .home-title {font-size: 35px;}
@@ -1928,7 +1931,7 @@ textarea.materialize-textarea {
 
 
 @media(max-width:480px ){
-
+#horseshoe{margin-top:10px!important; float:right}
   nav .brand-logo { font-size: 1.1rem; }
   nav .brand-logo img {height: 35px;margin-top: 12px;}
   .side-nav {width: 200px;}
@@ -1984,7 +1987,7 @@ textarea.materialize-textarea {
 
 
 @media(max-width:360px ){
-
+#horseshoe{margin-top:10px!important; float:right}
   nav .brand-logo img {height: 27px;margin-top: 16px;}
   .resume-btn { margin-left: 0;}
   .prev { margin-top: 55%;}
@@ -2009,7 +2012,7 @@ textarea.materialize-textarea {
 
 
 @media(max-width:320px ){
-
+#horseshoe{margin-top:10px!important; float:right}
   nav .brand-logo {  font-size: 1.1rem;}
   .home-title { font-size: 30px;}
   .experience-title { font-size: 14px;}
