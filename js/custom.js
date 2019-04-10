@@ -150,18 +150,18 @@ jQuery(function($){
 	// ustaw wysokosc mapy Kościoła	
 	var setHeight1 = $("#img-kosciol").height();
 	$("#div-map-kosciol").height(setHeight1);
-	window.onresize = function() {
+	$(window).on('resize',function(){
 		var setHeight1 = $("#img-kosciol").height();
 		$("#div-map-kosciol").height(setHeight1);
-	}
+	});
 
 	// ustaw wysokosc mapy Pałacyku
 	var setHeight2 = $("#img-kasyno").height();
 	$("#div-map-kasyno").height(setHeight2);
-	window.onresize = function() {
+	$(window).on('resize',function(){
 		var setHeight2 = $("#img-kasyno").height();
 		$("#div-map-kasyno").height(setHeight2);
-	}
+	});
 	
 
 	function mobileCheck() {
