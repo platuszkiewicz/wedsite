@@ -112,7 +112,7 @@ nav .brand-logo img {
 
 
 #home {
-  background: url("img/home-img1flat3.jpg") no-repeat center center;
+  background: url("img/ola4_crop.jpg") no-repeat center center;
   /* background-position: 100% 100%; */
   background-size: cover;
   display: inline;
@@ -159,7 +159,7 @@ nav .brand-logo img {
 
 
 .call-to-about {
-  bottom: -68px;  
+  bottom: -188px;  
   left: 47.5%;
   position: absolute;
 }
