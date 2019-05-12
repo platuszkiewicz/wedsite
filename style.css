@@ -2031,3 +2031,39 @@ textarea.materialize-textarea {
   .pagination li {width: 25px;margin: 0 5px;}
 
 }
+
+/*pokoloruj footer na bialo*/
+#footer > div.footer-top{
+background-color: rgb(250,250,250)!important;}
+
+#footer > div.footer-top > div > div.footer-top-inner > h2{
+  color: #ba68c8!important;
+}
+#footer > div.footer-top > div > div.row > div:nth-child(1) > div > p{
+  color: rgba(0,0,0,0.87)!important;
+}
+#footer > div.footer-top > div > div.row > div:nth-child(2) > div > p{
+  color: rgba(0,0,0,0.87)!important;
+}
+
+/*radio*/
+[type="radio"]:not(:checked), [type="radio"]:checked {
+	position: relative;
+    visibility: visible;
+	left:0;
+}
+
+#rsvp-form > * > * > label {
+    font-size: 1.0rem!important;
+}
+
+/*invalid form*/
+.invalidInput {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important;
+}
+
+.invalidLabel {
+    color: red!important;
+}
+

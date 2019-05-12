@@ -193,4 +193,81 @@ jQuery(function($){
 	} else { // undefined
 		// do nothing, default: index.html
 	}
+	
+	// RSVP
+    (function () {
+       emailjs.init("user_XkRsr5jWXuhLmNhMch6wx");
+    })();
+
+
+    $('input[type=radio][name=presence]').change(function () {
+            if (this.value == 'TAK') {
+                $('#companion').parent().show();
+            }
+            else if (this.value == 'NIE') {
+                $('#companion').parent().hide();
+            }
+        });
+
+	$('#btn-rsvp').click(function(ev){
+		ev.preventDefault();
+
+        if (validateForm()) {
+            sendEmail(function () {
+                showThankYou();
+                clearForm();
+            });
+        }
+	});
+
+    $('#contact-name').on('input', function () {
+        validateForm();
+    });
+
+    function validateForm() {
+        if ($('#contact-name').val() == "") {
+            $('#contact-name').addClass('invalidInput');
+            $('label[for="contact-name"]').addClass('invalidLabel');
+            return false;
+        } else {
+            $('#contact-name').removeClass('invalidInput');
+            $('label[for="contact-name"]').removeClass('invalidLabel');
+            return true;
+        }
+    }
+
+    function sendEmail(callback) {
+        // email js
+        event.preventDefault();
+
+        // Change to your service ID, or keep using the default service
+        var service_id = "default_service";
+        var template_id = "wedsite";
+
+        var myform = $("form#rsvp-form");
+
+        emailjs.sendForm(service_id, template_id, myform[0])
+            .then(function () {
+                console.log("SENT", myform[0].contactName.value, myform[0].presence.value,myform[0].companion.value, myform[0].contactMessage.value);
+                callback();
+            }, function (err) {
+                alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                //myform.find("button").text("Send");
+            });
+        return false;
+
+        // end email js
+    }
+	
+	function showThankYou(){
+		alert("Dziekujemy za informację");
+	}
+	
+	function clearForm() {
+		$('#contact-name').val("");
+        document.getElementById("presence-radio").checked = true;
+        $('#textarea1').val("");
+        $('#companion').val("");
+        $('.submit-btn').blur();
+	}
 });
